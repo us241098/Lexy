@@ -1,0 +1,13 @@
+<form action = "http://localhost:5000/result" method = "POST">
+{% for user in users %}
+<input type="checkbox" name= "selected" value= {{ user }}> {{ user }}<br>
+{% endfor %}
+
+<p>Features</p>
+
+{% for user in users %}
+<input type="checkbox" name= "selected" value= {{ user }}> {{ user }}<br>
+{% endfor %}
+
+<input type="submit" value="Submit">
+</form>
