@@ -16,7 +16,7 @@ X = dataset.iloc[:, [2, 3, 4,5,6,7,8,9,10, 11, 12, 13, 14, 15, 16, 17, 18, 19,20
 y = dataset.iloc[:, [1]].values
 
 def split():
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
     print y_test.ravel()
     return X_train, X_test, y_train, y_test
 
