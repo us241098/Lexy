@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import pandas as pd
 import os
 from flask import Flask, request, redirect, url_for
